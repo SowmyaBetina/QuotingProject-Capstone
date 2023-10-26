@@ -1,0 +1,26 @@
+
+
+   <div class="configuration-container">
+    <h1 class="page-title">Configuration Page</h1>
+    <label for="locationDropdown" class="label">Select a Location:</label>
+    <select class="select" id="locationDropdown">
+    <option *ngFor="let location of locationData" [value]="location.location">{{ location.location }}</option>
+    </select>
+
+    <label for="productDropdown" class="label">Select a Product:</label>
+    <select [(ngModel)]="selectedName" class="select">
+        <option *ngFor="let productName of products" [value]="productName">{{ productName }}</option>
+    </select>
+    
+  
+  <p class="selected-product">Selected Product: {{ selectedName }}</p>
+
+    <button (click)="viewFeatures(selectedName)" class="view-features-button">Enable Features</button>
+    <br><label for="quantityInput" class="label">Quantity:</label>
+   <br> <br> <input type="number" id="quantityInput" [(ngModel)]="quantity" (input)="updateTotalPrice()" class="quantity-input">
+    <p class="total-price">Total Price: {{ totalPrice }}</p>
+
+    <button (click)="billNow()" class="bill-now-button">Bill Now</button>
+</div>
+
+

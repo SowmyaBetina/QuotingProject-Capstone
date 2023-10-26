@@ -1,0 +1,40 @@
+<!-- <div class="billing-container">
+    <h1 class="page-title">Billing Page</h1>
+    <div class="billing-details">
+      <p>Product Name: {{ productName }}</p>
+      <p>Quantity: {{ quantity }}</p>
+      <p>Total Price: {{ totalPrice }}</p>
+    </div>
+    <div *ngIf="!paymentSuccessful" class="payment-buttons">
+      <button (click)="pay()" class="pay-button">Pay</button>
+      <button class="deny-button">Deny</button>
+    </div>
+    <div *ngIf="paymentSuccessful" class="payment-success">
+      Payment Successful
+    </div>
+    <div *ngIf="paymentDenied" class="payment-denied">
+        Payment Denied
+    </div>
+  </div>
+   
+ -->
+
+ <div class="billing-container">
+    <h1 class="page-title">Billing Page</h1>
+    <div class="billing-details">
+      <p>Product Name: {{ productName }}</p>
+      <p>Quantity: {{ quantity }}</p>
+      <p>Total Price: {{ totalPrice }}</p>
+    </div>
+    <div *ngIf="!paymentSuccessful && !paymentDenied" class="payment-buttons">
+      <button (click)="pay()" class="pay-button">Pay</button>
+      <button (click)="denyPayment()" class="deny-button">Deny</button>
+    </div>
+    <div *ngIf="paymentDenied" class="payment-denied">
+      Payment Denied
+    </div>
+    <div *ngIf="paymentSuccessful" class="payment-success">
+      Payment Successful
+    </div>
+  </div>
+  

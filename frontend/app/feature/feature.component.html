@@ -1,0 +1,29 @@
+
+<div class="features-container">
+  <div *ngIf="features && features.length > 0">
+    <ul class="feature-list">
+      <li *ngFor="let feature of features" class="feature-item">
+        <h4>{{ feature.name }}</h4>
+        <p class="feature-details">Internal Name: {{ feature.internalName }}</p>
+        <p class="feature-details">Details: {{ feature.details }}</p>
+        
+      </li>
+    </ul>
+    <button (click)="navigateToConfiguration()" class="back-button">Back to Configuration</button>
+  </div>
+
+  <div *ngIf="features && features.length === 0">
+    <p class="no-features">No features available for this product.</p>
+  </div>
+
+  <div *ngIf="!features">
+    <p class="loading-features">Loading features...</p>
+  </div>
+</div>
+
+<!-- <ul class="feature-list">
+  <li *ngFor="let feature of features" class="feature-item">
+    <button (click)="navigateToParameters(feature.name)">View Parameters</button>
+  </li>
+</ul> -->
+

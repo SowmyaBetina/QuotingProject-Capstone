@@ -1,0 +1,39 @@
+<!-- <div *ngFor="let product of products">
+  <h2>{{ product.name }}</h2>
+  <p>Internal Name: {{ product.internalName }}</p>
+  <p>Details: {{ product.details }}</p>
+  <p>Max Products Per Location: {{ product.maxProductsPerLocation }}</p>
+  <button (click)="viewFeatures(product.name)">View Features</button>
+</div> -->
+
+
+<!-- <div class="product-container"> -->
+  <!-- <div *ngFor="let product of products" class="product-tile">
+    <h2>{{ product.name }}</h2>
+    <div class="product-details">
+      <p>Internal Name: {{ product.internalName }}</p>
+      <p>Details: {{ product.details }}</p>
+      <p>Max Products Per Location: {{ product.maxProductsPerLocation }}</p>
+    </div> -->
+    <!-- <button (click)="viewFeatures(product.name)" class="view-features-button">View Features</button> -->
+  <!-- </div>
+  <button (click)="navigateToConfiguration()">Next</button>
+</div> -->
+
+<div class="product-container">
+  <div class="product-tiles">
+    <div *ngFor="let product of products" class="product-tile" (click)="toggleProductSelection(product)">
+      <h2>{{ product.name }}</h2>
+      <div class="product-details">
+        <p>Internal Name: {{ product.internalName }}</p>
+        <p>Details: {{ product.details }}</p>
+        <p>Max Products Per Location: {{ product.maxProductsPerLocation }}</p>
+      </div>
+      
+    </div>
+  </div>
+  <button (click)="navigateToConfiguration()" class="next-button">Next</button>
+</div>
+
+
+

@@ -1,0 +1,59 @@
+
+
+    <div class="container">
+      <h1>Location Details</h1>
+      <table class="location-table">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let location of locationDetails">
+            <td>{{ location.location }}</td>
+            <td>{{ location.street }}</td>
+            <td>{{ location.city }}</td>
+            <td>{{ location.state }}</td>
+            <td>{{ location.country }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button-container">
+        <button class="next-button" routerLink="/products">Next</button>
+      </div>
+    </div>
+    
+    <div class="center-box">
+      <h1>Add Location</h1>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="location">Location Name</label>
+          <input type="text" id="location" name="location" [(ngModel)]="location.location" required>
+        </div>
+        <div class="form-group">
+          <label for="streetName">Street Name</label>
+          <input type="text" id="street" name="street" [(ngModel)]="location.street" required>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" [(ngModel)]="location.city" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" [(ngModel)]="location.state" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" [(ngModel)]="location.country" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+
+  
+  

@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: #007BFF;
+}
+
+.navbar-brand {
+  color: #0a0000;
+  font-size: 24px;
+}
+
+.navbar-toggler-icon {
+  color: #0f0e0e;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.header {
+  background-color: white;
+  color: #0e0909;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+.quote-table {
+  width: 50%;
+  margin: 0 auto; /* Horizontally center the table */
+  margin-left: 25%; /* Add a 25% gap to the left */
+  margin-right: 25%; /* Add a 25% gap to the right */
+  margin-top: 20px;
+}
+
+.quote-table th,
+.quote-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.quote-table th {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.quote-table td {
+  background-color: #fff;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,109 @@
+<!-- 
+
+   <div class="container">
+    <h1>Customer Quotes</h1>
+    <table class="quote-table">
+      <thead>
+        <tr>
+          <th>Quote Name</th>
+          <th>Quote Owner</th>
+          <th>Quantity</th>
+          <th>Units</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of customerQuotes">
+          <td>{{ item.quoteName }}</td>
+          <td>{{ item.quoteOwner }}</td>
+          <td>{{ item.qty }}</td>
+          <td>{{ item.unitprice }}</td>
+          <td>{{ item.total }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <tr *ngFor="let item of customerQuotes">
+        <td>Customer Name : {{item.customerName}}</td> 
+        <td>Account Status : {{item.accountStatus}}</td>
+      </tr>
+    </div>
+    <div class="button-container">
+      <button class="next-button" [routerLink]="['/location']">Next</button>
+    </div>
+
+  </div>
+   -->
+
+   <!-- <div class="top-right-info">
+    <p>Name: sowmya</p>
+    <p>Account Status: {{ customerQuotes[0].accountStatus }}</p>
+  </div> -->
+
+
+
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Quoting Project</a> -->
+      <a class="nav-link" [routerLink]="['/customerquote']">Quoting Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <a class="nav-link" [routerLink]="['/customerquote']">Home <span class="sr-only">(current)</span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/products']">Products<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/billing']">Bills<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="header">
+        
+        <h1>Customer Quotes</h1>
+      </div>
+      <table class="quote-table">
+        <thead>
+          <tr>
+            <th>Quote Name</th>
+            <th>Quote Owner</th>
+            <th>Quantity</th>
+            <th>Units</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of customerQuotes">
+            <td>{{ item.quoteName }}</td>
+            <td>{{ item.quoteOwner }}</td>
+            <td>{{ item.qty }}</td>
+            <td>       </td>
+            <td>       </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button-container">
+        <button class="next-button" [routerLink]="['/location']">Next</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+  
+  
