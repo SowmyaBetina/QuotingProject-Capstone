@@ -100,8 +100,8 @@ The system architecture should be designed for scalability to accommodate increa
 A comprehensive testing strategy will be employed, including unit tests, integration tests, and user acceptance testing, to ensure the application functions correctly.
 
 ### **6. Functional Requirements**
-- [ ] Backend with documentation
-- [ ] Frontend with documentation
+- [ ] [Backend] (https://github.com/SowmyaBetina/QuotingProject-Capstone/tree/main/backend)
+- [ ] [Frontend] (https://github.com/SowmyaBetina/QuotingProject-Capstone/tree/main/frontend)
 - [ ] ER diagram
 - [ ] Sonarqube report
 
