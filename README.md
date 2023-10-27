@@ -99,6 +99,9 @@ The system architecture should be designed for scalability to accommodate increa
 
 A comprehensive testing strategy will be employed, including unit tests, integration tests, and user acceptance testing, to ensure the application functions correctly.
 
-### **6.References**
+### **6. Functional Requirements**
+- [ ] Backend with documentation
+- [ ] Frontend with documentation
+- [ ] ER diagram
+- [ ] Sonarqube report
 
-------------
